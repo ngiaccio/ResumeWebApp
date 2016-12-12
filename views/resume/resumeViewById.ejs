@@ -1,0 +1,25 @@
+<%- include("../includes/header.ejs", {title:"Resumes - " + result[0].resume_name}); %>
+    <h1>Resumes</h1>
+    <ul>
+        <li>Resume ID: <%= result[0].resume_id%></li>
+        <li>Resume Name: <%= result[0].resume_name %></li>
+        <li>Account Holder: <%= result[0].first_name %> <%= result[0].last_name %> (<%= result[0].email %>) </li>
+        <br />
+
+        <u>Resume Information:</u>
+        <br />
+        <li>Recorded Company(-ies): <%= result[0].company_name %></li>
+
+        <li>Recorded School(s): <%= result[0].school_name %></li>
+
+        <li>Recorded Skill(s): <br/> -> <%= result[0].skill_name %> : <%= result[0].skill_description %> </li>
+
+
+
+
+
+    </ul>
+
+<a href="/resume/all"><< back</a>
+
+<%- include("../includes/footer.ejs"); %>

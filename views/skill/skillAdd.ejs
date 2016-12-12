@@ -1,0 +1,17 @@
+<%- include("../includes/header.ejs", {title:"Add New Skill"}); %>
+
+<h1>Add New Skill</h1>
+    <form action="/skill/insert" method="get">
+        Skill Name: <input id="skill_name" name="skill_name" type="text" />
+        <br />
+        <br />
+        Description: <input id="skill_description" name="skill_description" type="text" />
+        <br />
+        <br />
+
+        <input type="submit" />
+    </form>
+
+    <a href="/skill/all"><< back</a>
+
+<%- include("../includes/footer.ejs"); %>
